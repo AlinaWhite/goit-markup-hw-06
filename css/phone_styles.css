@@ -1,0 +1,246 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    
+    ul, 
+    ol {
+        list-style-type: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    button {
+        cursor: pointer;
+    }
+    
+    body { 
+        font-family: "Roboto", sans-serif;
+        background-color: #ffffff;
+        color: #434455;
+    }
+    
+    img {
+        display: block;
+    }
+    
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+.container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+
+@media screen and (min-width: 768px) {
+   .container { max-width: 768px; } 
+}
+
+@media screen and (min-width: 1158px) {
+    .container { max-width: 1158px; } 
+ }
+ 
+/* ======header======= */
+
+.menu-list {
+    display: none;
+}
+
+.contacts-block {
+    display: none;
+}
+
+
+
+.burger-button {
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    fill: #2f2f37;
+}
+
+.pagelogo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+}
+
+.logo-2part {
+    color: #2e2f42;
+}
+
+.header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: #ffffff;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.burger-menu.is-open {
+    transform: translateX(0%);
+}
+
+.burger-full {
+    position: relative;
+    padding-top: 72px;
+    padding-bottom: 40px;
+}
+
+.button-close-burger {
+    line-height: 0px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+border: 1px solid rgba(0, 0, 0, 0.1);
+width: 24px;
+height: 24px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+background-color: transparent;
+}
+
+.button-close-burger:hover,
+.button-close-burger:focus {
+    background-color:#404bbf;
+    border: none;
+}
+
+.close-burger-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.button-close-burger:hover > .close-burger-icon,
+.button-close-burger:focus > .close-burger-icon {
+    fill: #ffffff;
+}
+
+.list-burger-item {
+    font-weight: 700;
+font-size: 36px;
+line-height: 1.11111;
+letter-spacing: 0.02em;
+color: #2e2f42;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.list-burger-item:hover,
+.list-burger-item:focus {
+    color: #404bbf;
+}
+
+.burger-nav {
+    margin-bottom: 168px;
+}
+
+.list-nav-item {
+    margin-bottom: 40px;
+}
+
+.adres-item-burger {
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #434455;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.menu-adress {
+    margin-bottom: 48px;
+}
+
+.tel-item-burger {
+    margin-bottom: 24px;
+}
+
+.adres-item-burger:hover,
+.adres-item-burger:focus {
+    color: #404bbf;
+}
+
+.media-icons-burger {
+    display: flex;
+    gap: 40px;
+}
+
+.media-item-list {
+    line-height: 0;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    width: 40px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.media-icon {
+    fill: #ffffff;
+}
+
+.media-item-list:hover,
+.media-item-list:focus {
+    background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+    .burger-button {
+        display: none;
+    }
+    
+
+ }
+ 
+
+
+
+
+
+
+
+ @media screen and (min-width: 1158px) {
+    
+  }
