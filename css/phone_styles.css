@@ -999,7 +999,139 @@ line-height: 1.11;
 
 @media screen and (min-width: 320px) {
     .port-container {
-        margin: 96px 16px;
+        margin-top: 96px;
+        margin-bottom: 96px;
+        margin-right: auto;
+        margin-left: auto;
 
     }
+
+    .portfolio-title {
+        font-size: 36px;
+        line-height: 1.11;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #2e2f42;
+        text-transform: capitalize; 
+        margin-bottom: 72px;
+    }
+
+
+    .ptf-item-name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #2e2f42;
+        margin-bottom: 8px;
+    }
+    
+    .ptf-item-text {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+    }
+    
+    .port-text-box {
+        padding: 32px 16px;
+        letter-spacing: 0.02em;
+        border: 1px solid #e7e9fc;
+        border-top: none;
+    
+    }
+
+    .overflow-conteiner
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.port-overflow-text {
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+padding: 40px 32px;
+overflow: auto;
+
+}
+
+.port-overflow-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: #4d5ae5;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.portfolio-list-item:hover .port-overflow-text {
+    transform: translateY(0%);
+}
+
+.portfolio-list-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+}
+
+@media screen and (max-width: 767px) {
+.ptf-item-picture {
+    height: 280px;
+    width: 288px;
+}
+
+
+.portfolio-list-item {
+    width: 288px;
+}
+
+.portfolio-list-item:not(:last-child) {
+    margin-bottom: 48px;
+}
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .ptf-item-picture {
+        width: 356px;
+        height: 300px;
+    }
+
+
+    .portfolio-list-item {
+        width: 356px;
+    }
+
+    .portfolio-list {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio-list {
+       row-gap: 48px;
+    }
+
+    .ptf-item-picture{
+        width: 360px;
+        height: 300px;
+    }
+
+
+    .portfolio-list-item {
+        width: 359px;
+    }
+
 }
